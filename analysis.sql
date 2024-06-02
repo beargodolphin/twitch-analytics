@@ -58,7 +58,7 @@ FROM stream
 GROUP BY game
 ORDER BY COUNT(*) DESC;
 
---What time of day do the streams begin?--
+--How many stream viewers per hour?--
 SELECT strftime('%H', time),
   COUNT(*)
 FROM stream
